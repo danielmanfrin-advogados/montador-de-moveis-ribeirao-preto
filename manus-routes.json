@@ -1,0 +1,56 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "Montador de Móveis em Ribeirão Preto"
+    },
+    {
+      "path": "/servicos/montagem-de-moveis/",
+      "title": "Montagem de Móveis Novos em Ribeirão Preto"
+    },
+    {
+      "path": "/servicos/desmontagem-de-moveis/",
+      "title": "Desmontagem de Móveis em Ribeirão Preto"
+    },
+    {
+      "path": "/servicos/montagem-de-moveis-para-escritorio/",
+      "title": "Móveis para Escritório em Ribeirão Preto | Montagem"
+    },
+    {
+      "path": "/bairros/centro/",
+      "title": "Montagem de Móveis no Centro, Ribeirão Preto"
+    },
+    {
+      "path": "/bairros/jardim-botanico/",
+      "title": "Montagem de Móveis no Jardim Botânico, Ribeirão Preto"
+    },
+    {
+      "path": "/bairros/nova-alianca/",
+      "title": "Montagem de Móveis na Nova Aliança, Ribeirão Preto"
+    },
+    {
+      "path": "/bairros/vila-tiberio/",
+      "title": "Montagem de Móveis na Vila Tibério, Ribeirão Preto"
+    },
+    {
+      "path": "/bairros/bonfim-paulista/",
+      "title": "Montagem de Móveis em Bonfim Paulista, Ribeirão Preto"
+    },
+    {
+      "path": "/bairros/campos-eliseos/",
+      "title": "Montagem de Móveis nos Campos Elíseos, Ribeirão Preto"
+    },
+    {
+      "path": "/sobre/",
+      "title": "Sobre o Portal | Montador de Móveis Ribeirão Preto"
+    },
+    {
+      "path": "/perguntas-frequentes/",
+      "title": "Dúvidas sobre Montagem de Móveis em Ribeirão Preto"
+    },
+    {
+      "path": "/politica-de-privacidade/",
+      "title": "Política de Privacidade | Montador de Móveis RP"
+    }
+  ]
+}

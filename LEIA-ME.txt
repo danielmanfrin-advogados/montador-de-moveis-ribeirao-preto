@@ -1,0 +1,61 @@
+SITE_ORIGIN=https://montadordemoveisribeiraopreto.vercel.app
+
+MONTADOR DE MÓVEIS EM RIBEIRÃO PRETO
+====================================
+
+O que é este projeto
+--------------------
+Site estático de contato para pedidos sobre montagem e desmontagem de móveis em Ribeirão Preto. As páginas já contêm texto no HTML, e os arquivos de build não precisam de bibliotecas.
+
+Trocar os números de WhatsApp e telefone
+-----------------------------------------
+1. Abra `config.js`.
+2. Troque `whatsapp` e `telefone` pelos números do prestador, somente com dígitos, no formato 55 + DDD + número.
+3. Salve e publique a nova versão. Os botões de todas as páginas leem esses valores; não é necessário editar os links em cada HTML.
+4. Se a mensagem padrão precisar mudar, edite o campo `mensagem` no mesmo arquivo. As páginas de serviço também têm mensagens próprias nos atributos `data-msg`.
+
+Atualizar o registro na planilha Google
+---------------------------------------
+1. Abra a planilha que receberá os registros.
+2. Selecione **Extensões > Apps Script**.
+3. Abra `apps-script/Code.gs`, copie todo o conteúdo e cole no editor Apps Script, substituindo o código anterior.
+4. Execute a função `setup()` uma vez e autorize o acesso solicitado. A função cria/ajusta a aba `Cliques` e a aba `Resumo`.
+5. Se necessário para corrigir linhas antigas, execute `migrarLinhasAntigas()` uma vez, conforme a observação do próprio script.
+6. Selecione **Implantar > Gerenciar implantações**, edite a implantação existente, escolha **Nova versão** e implante. Assim a URL `/exec` existente continua a mesma. O acesso deve estar como **Qualquer pessoa**.
+7. O endpoint já usado em `config.js` é `https://script.google.com/macros/s/AKfycbzNOf1W0H8qo7UEY0AGEyLIF3ksLYgj2YELKy9OytgORZ_3Zs6PmRGl_a2p9w-myqdnlg/exec`. Se a planilha usar uma URL diferente, atualize o campo `endpoint` em `config.js`.
+
+Relatório por site
+------------------
+Na planilha, use **Inserir > Tabela dinâmica**. Escolha `Site` nas linhas e conte os valores da coluna `Botão` (ação) em valores. A aba `Resumo` também apresenta totais por dia, horário, site e botão.
+
+Imagens
+-------
+As imagens do site são ilustrativas. Para substituir por fotografias fornecidas pelo prestador, mantenha os nomes e proporções dos arquivos em `img/`: `hero.jpg` (16:9), `sobre.jpg` (4:3) e os três arquivos com nome igual ao slug do serviço. Ajuste a compressão para evitar arquivos pesados. Não use uma imagem ilustrativa como prova de que ela mostra o prestador ou o local do atendimento.
+
+Build e Vercel
+--------------
+O projeto não usa React, Vite ou dependências. Para testar localmente, use Node.js, execute `npm install --package-lock=false` e depois `npm run build`. A pasta `dist/` conterá o site estático. No painel Vercel, importe o repositório e use Framework Preset **Other**; o `vercel.json` já define o comando `npm run build`, a pasta `dist`, `cleanUrls` e `trailingSlash`. Não é necessário adicionar bibliotecas.
+
+Domínio e SEO
+-------------
+O domínio provisório está no início deste arquivo, na variável `SITE_ORIGIN`. Para trocar por um domínio próprio, atualize o domínio nas tags canonical, Open Graph, Twitter, nos JSON-LD, `sitemap.xml`, `robots.txt` e `llms.txt` antes do build. As tags de metadados permanecem escritas no HTML inicial para leitura por buscadores.
+
+Google Search Console
+---------------------
+1. Cadastre a propriedade do domínio ou a propriedade de prefixo de URL no Google Search Console.
+2. Conclua a verificação solicitada pelo Google.
+3. Abra a seção **Sitemaps**, informe `https://montadordemoveisribeiraopreto.vercel.app/sitemap.xml` e envie.
+4. Depois da publicação, confira as páginas e a cobertura de indexação no Search Console. A presença do sitemap não garante posição ou indexação imediata.
+
+Perfil da Empresa no Google
+---------------------------
+Crie ou atualize um Perfil da Empresa no Google somente quando houver um prestador real com endereço elegível e confirmado. Não use endereço fictício do portal nem associe o site a um endereço que não represente o prestador.
+
+Informação legal
+----------------
+O site é um portal de contato e não presta o serviço diretamente. Valores, prazos, disponibilidade e formas de pagamento precisam ser confirmados com o prestador no atendimento.
+
+
+## Segurança da cópia pública
+
+Nesta cópia pública, o valor literal de TOKEN em apps-script/Code.gs foi substituído pelo placeholder __CONFIGURE_UNIQUE_TOKEN_BEFORE_DEPLOYMENT__. Antes de implantar o Apps Script, substitua o placeholder por um segredo único diretamente no projeto Apps Script; não comite o valor real.

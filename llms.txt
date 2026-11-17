@@ -1,0 +1,37 @@
+# Montador de Móveis em Ribeirão Preto
+
+Portal de contato para pedidos de montagem e desmontagem de móveis em Ribeirão Preto, São Paulo. O atendimento é feito por prestadores parceiros da região.
+
+## Serviços
+- [Montagem de móveis novos](https://montadordemoveisribeiraopreto.vercel.app/servicos/montagem-de-moveis/): Montagem de móveis novos para diferentes ambientes. Informe o modelo, a quantidade e o bairro para o prestador avaliar o pedido.
+- [Desmontagem de móveis](https://montadordemoveisribeiraopreto.vercel.app/servicos/desmontagem-de-moveis/): Desmontagem de móveis para reorganizar um ambiente ou preparar uma mudança. Conte qual peça precisa ser desmontada e onde ela está.
+- [Montagem de móveis para escritório](https://montadordemoveisribeiraopreto.vercel.app/servicos/montagem-de-moveis-para-escritorio/): Montagem de mesas, cadeiras, armários e outros móveis de escritório. Informe quantas peças há e como será organizado o atendimento.
+
+## Bairros
+- [Centro](https://montadordemoveisribeiraopreto.vercel.app/bairros/centro/)
+- [Jardim Botânico](https://montadordemoveisribeiraopreto.vercel.app/bairros/jardim-botanico/)
+- [Nova Aliança](https://montadordemoveisribeiraopreto.vercel.app/bairros/nova-alianca/)
+- [Vila Tibério](https://montadordemoveisribeiraopreto.vercel.app/bairros/vila-tiberio/)
+- [Bonfim Paulista](https://montadordemoveisribeiraopreto.vercel.app/bairros/bonfim-paulista/)
+- [Campos Elíseos](https://montadordemoveisribeiraopreto.vercel.app/bairros/campos-eliseos/)
+
+## Páginas institucionais
+- [Sobre](https://montadordemoveisribeiraopreto.vercel.app/sobre/)
+- [Perguntas frequentes](https://montadordemoveisribeiraopreto.vercel.app/perguntas-frequentes/)
+- [Política de privacidade](https://montadordemoveisribeiraopreto.vercel.app/politica-de-privacidade/)
+
+## Perguntas e respostas
+### O que devo informar para pedir um orçamento?
+Informe o bairro, o tipo e o modelo do móvel, a quantidade, se há manual e peças e se precisa desmontar alguma peça. Fotos do móvel e do ambiente podem ajudar o prestador a compreender o pedido.
+
+### O prestador monta qualquer tipo ou marca de móvel?
+A possibilidade depende do modelo, das peças, das instruções e do escopo solicitado. Descreva o produto e confirme a viabilidade diretamente com o prestador.
+
+### Preciso ter o manual e todas as peças?
+Ter o manual, as ferragens e as peças disponíveis facilita a avaliação. Se algo estiver faltando, informe isso antes do atendimento e pergunte ao prestador como proceder.
+
+### A desmontagem inclui transporte ou remontagem?
+Essas etapas podem ser serviços diferentes. Diga se também precisa de embalagem, transporte ou remontagem e confirme com o prestador quais atividades ele pode atender.
+
+### Como peço o orçamento?
+Clique em WhatsApp ou Ligue agora e informe o bairro, o modelo e a quantidade de móveis, se há manual e peças e se precisa de desmontagem. Envie fotos, se puder, e confirme valores e condições com o prestador.
